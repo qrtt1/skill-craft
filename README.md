@@ -7,7 +7,7 @@ Claude Code Skill Marketplace，提供自省與品質維護的 plugins 與 skill
 ### 安裝 marketplace
 
 ```bash
-claude plugin marketplace add /path/to/skill-craft
+claude plugin marketplace add qrtt1/skill-craft
 ```
 
 ### 安裝 plugin
@@ -16,6 +16,8 @@ claude plugin marketplace add /path/to/skill-craft
 claude plugin install reflect-skill@skill-craft
 claude plugin install reflect-work@skill-craft
 ```
+
+> Fork 後請將上方的 `qrtt1/skill-craft` 替換為你自己的 `<owner>/<repo>`。
 
 ## 包含的 Plugins
 
@@ -50,3 +52,7 @@ claude plugin install reflect-work@skill-craft
 2. `reflect-skill-review` — 審查 skill
 3. `reflect-skill-lint` — 檢查目錄結構與版號一致性
 4. `reflect-skill-release` — 同步版號、commit、push、更新 marketplace 與 plugins
+
+## License
+
+MIT
