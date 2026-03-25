@@ -2,6 +2,8 @@
 
 Claude Code Skill Marketplace，提供自省與品質維護的 plugins 與 skills。用自身的 skills 來維護這個 marketplace。
 
+這不是一個拿來直接用的 marketplace，而是建立自己 skill 生態系的起點。內建的 reflect skills 是「核心」，幫助你在日常工作中發現重複模式、審查品質、自動化 release 流程。隨著使用，你會不斷從工作中提煉出新的 skills，讓這個 marketplace 長出屬於你自己的工作流程。
+
 ## 快速開始
 
 ### 安裝 marketplace
