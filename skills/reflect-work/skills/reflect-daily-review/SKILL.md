@@ -19,8 +19,12 @@ description: Review today's work by scanning git log, conversation context, and 
 # 今天的 git commits
 git log --oneline --since="$(date +%Y-%m-%d)T00:00:00" --all
 
-# 今天的 git diff 統計
-git diff --stat $(git log --format=%H --since="$(date +%Y-%m-%d)T00:00:00" --reverse | head -1)^..HEAD 2>/dev/null
+# 今天的 git diff 統計（若今天有 commit）
+FIRST_COMMIT=$(git log --format=%H --since="$(date +%Y-%m-%d)T00:00:00" --reverse | head -1)
+if [ -n "$FIRST_COMMIT" ]; then
+  PARENT=$(git rev-parse "$FIRST_COMMIT"^ 2>/dev/null || echo "$FIRST_COMMIT")
+  git diff --stat "$PARENT"..HEAD
+fi
 
 # 今天的日誌檔案
 ls docs/daily/$(date +%Y-%m-%d)-* 2>/dev/null
@@ -67,6 +71,7 @@ ls docs/daily/$(date +%Y-%m-%d)-* 2>/dev/null
 
 - 沒有今天的 commits → 告知使用者今天尚無 git 記錄，詢問是否要從對話脈絡回顧
 - 不在 git repo → 告知使用者，僅從 docs/daily/ 和對話脈絡回顧
+- `docs/daily/` 目錄不存在 → 若使用者選擇儲存回顧，詢問是否建立目錄
 
 ## 不在範圍內
 

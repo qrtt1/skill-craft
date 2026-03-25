@@ -68,12 +68,14 @@ git push
 依序執行：
 
 ```bash
-claude plugin marketplace update <marketplace-name>
+# 更新 marketplace 索引（可指定名稱，不指定則更新全部）
+claude plugin marketplace update [marketplace-name]
 ```
 
 然後對每個版號有變更的 plugin 執行：
 
 ```bash
+# 更新已安裝的 plugin 到最新版本（格式：plugin-name@marketplace-name）
 claude plugin update <plugin-name>@<marketplace-name>
 ```
 
@@ -98,7 +100,7 @@ marketplace name 從 marketplace.json 的 `name` 欄位取得。
 
 ## Error Handling
 
-- git push 失敗 → 顯示錯誤，不繼續後續步驟
+- git push 失敗 → 顯示錯誤，提醒使用者本地已有未推送的 commit，不繼續後續步驟
 - marketplace update 失敗 → 顯示錯誤，不繼續 plugin update
 - plugin update 失敗 → 顯示錯誤，繼續其他 plugin（不因單一失敗中斷）
 - 沒有 remote → 告知使用者需要先設定 remote

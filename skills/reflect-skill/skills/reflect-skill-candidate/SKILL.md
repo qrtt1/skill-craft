@@ -76,7 +76,7 @@ cat CLAUDE.md
 ## Step 5: 記錄
 
 若使用者選定候選，將分析結果存為日誌：
-`docs/daily/YYYY-MM-DD-NN-skill-candidates.md`
+`docs/daily/YYYY-MM-DD-NN-skill-candidates.md`（NN 為當天的流水序號，從 01 開始遞增）
 
 ## Error Handling
 

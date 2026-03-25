@@ -83,6 +83,7 @@ git log --oneline -30
 
 - CLAUDE.md 不存在 → 建議使用者先建立，或提供初始版本
 - 日誌太少 → 僅從 commit 歷史和 CLAUDE.md 本身分析
+- `docs/daily/` 目錄不存在 → 在 Step 5 儲存時詢問使用者是否建立目錄
 
 ## 不在範圍內
 
