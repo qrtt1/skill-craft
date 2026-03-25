@@ -1,0 +1,23 @@
+{
+  "name": "skill-craft",
+  "description": "Claude Code Skill Marketplace - reflection and quality maintenance skills",
+  "owner": {
+    "name": "skill-craft"
+  },
+  "plugins": [
+    {
+      "name": "reflect-skill",
+      "description": "Skill quality maintenance: review skills after creation and discover repetitive patterns that could become new skills.",
+      "version": "0.1.0",
+      "source": "./skills/reflect-skill",
+      "category": "reflection"
+    },
+    {
+      "name": "reflect-work",
+      "description": "Personal work reflection: daily review and retrospective for CLAUDE.md rule updates.",
+      "version": "0.1.0",
+      "source": "./skills/reflect-work",
+      "category": "reflection"
+    }
+  ]
+}

@@ -1,13 +1,48 @@
-# Python
+# Python virtual environment
 venv/
-__pycache__/
-*.pyc
-.Python
-*.egg-info/
-dist/
-build/
+env/
+ENV/
+.venv
 
-# General
-.env
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Sensitive files
+*.json.key
+*-key.json
+service-account*.json
+credentials*.json
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
 *.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Skill packages (build artifacts)
+*.skill
+*.tgz

@@ -1,0 +1,8 @@
+{
+  "name": "reflect-skill",
+  "version": "0.3.0",
+  "description": "Skill quality maintenance: review, discover candidates, lint structure, and automate plugin release.",
+  "author": {
+    "name": "skill-craft"
+  }
+}
