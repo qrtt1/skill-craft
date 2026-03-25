@@ -19,7 +19,7 @@ claude plugin install reflect-skill@skill-craft
 claude plugin install reflect-work@skill-craft
 ```
 
-> Fork 後請將上方的 `qrtt1/skill-craft` 替換為你自己的 `<owner>/<repo>`。
+> 點選 "Use this template" 建立你自己的 marketplace repo，安裝指令中的 `qrtt1/skill-craft` 請替換為你的 `<owner>/<repo>`。
 
 ## 包含的 Plugins
 
